@@ -1,4 +1,4 @@
-# Example 1
+# Example 1 - all is well
 
 When you start a Django project you'll usually add some new models. This example is the simplest,
 happiest path.
