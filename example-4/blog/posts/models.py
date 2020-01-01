@@ -15,11 +15,6 @@ class Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.PROTECT)
     post = models.ForeignKey(Post, on_delete=models.PROTECT)
     text = models.CharField(max_length=5000)
-    sentiment = models.CharField(
-        choices=[('positive', 'positive'), ('neutral', 'neutral'), ('negative', 'negative')],
-        max_length=10,
-        null=True
-    )
     created_at = models.DateTimeField(default=datetime.now)
     updated_at = models.DateTimeField(default=datetime.now)
     comment_type = models.CharField(
